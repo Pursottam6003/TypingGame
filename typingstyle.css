@@ -1,0 +1,130 @@
+/* comments for CSS*/
+
+/* Background image is positioned and baground colour is change*/
+
+#body 
+{
+    background-image: url(./image3.jpg);
+    background-position: center,center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(27, 27, 27);
+}
+
+/*Upper box of our web page*/
+/* Some styles are diven in positon and background property are modified*/
+.upper
+{
+    background-color: rgb(7, 7, 7);
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-height: 100px;
+    border:3px solid rgb(8, 248, 68);
+    border-radius: 1rem;
+}
+
+/*The typing block that will be visible only after clicking on the button and reflect the property*/
+/* position the div at center and try to show the properties*/
+.block 
+{   
+    margin:auto;
+    margin-top:10px;
+    max-width: 450px;
+    height: auto;
+    padding:15px;
+    width:60vw;
+    border-radius: 1rem;
+    border:2px solid pink;
+    background-color: rgb(143, 235, 90);
+    display:none;
+   
+}
+/*provide the property of typing block and positioning*/
+.typingBlock
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    color:#fff;
+    font-size: 18px;
+}
+
+/*Our input box*/
+#input
+{
+    width: 60%;
+    height: 30px;
+}
+/*flase key used to show that we have to start the button after clicking start button*/
+kbd 
+{
+    background-color: darkgray;
+    border-radius: 0.3rem;
+    color: #fff;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    
+    font-size: 14px;
+}
+/* This is used to refreshes the brower*/
+#reset
+{ 
+    margin:7px;
+    padding:6px;
+    font-size: 18px;
+    background-color: rgb(255, 16, 16);
+    border-radius: 1rem;
+}
+/*On clicking start button it will load its properties and call the java script function */
+#start 
+{
+    margin:7px;
+    padding:6px;
+    font-size: 18px;
+    background-color: rgb(10, 236, 10);
+    border-radius: 1rem;
+    color:#fff;
+    
+}
+/*The wriiten paragraph text color change to black*/
+article
+{
+    color:black;
+}
+/*Tag for the buttons color */
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/*This will after the user finished the typing it will call this function in java script and this properties are passed*/
+.card
+{   
+    background-color: rgb(82, 82, 219);
+    border-radius: 1rem;
+    margin: auto;
+    padding:10px;
+    color:#fff;
+    display:none;
+}
+
+.final
+{
+    margin: auto;
+
+}
+/*message for the user block after finishing the typing*/
+h2  
+{   text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+
+
+
