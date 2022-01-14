@@ -55,7 +55,7 @@ btn.addEventListener('click',function(){
 
 input.addEventListener('input',function(e){
     if(firstInput==false)
-    {   input.value=''; //emptying the input box after the start click 
+    {   
         const StartingTime= new Date(); //checking the date
         first=StartingTime.getTime();
         firstInput=true;
