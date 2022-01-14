@@ -1,4 +1,4 @@
-/* comments for CSS*/
+    /* comments for CSS*/
 
 /* Background image is positioned and baground colour is change*/
 
@@ -16,7 +16,7 @@
 /* Some styles are diven in positon and background property are modified*/
 .upper
 {
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(243, 71, 71);
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
@@ -27,19 +27,31 @@
 
 /*The typing block that will be visible only after clicking on the button and reflect the property*/
 /* position the div at center and try to show the properties*/
+/*provide the property of typing block and positioning*/
+.typingBlock
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    width:auto;
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+}
 .block 
 {   
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     padding:15px;
-    min-width: 400px;
     border-radius: 1rem;
     border:2px solid pink;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     background-color: rgb(143, 235, 90);
     display:none;
    
 }
+
+
 /*provide the property of typing block and positioning*/
 .typingBlock
 {
@@ -47,14 +59,15 @@
     margin-right: auto;
     text-align: center;
     color:#fff;
-    font-size: 18px;
+    font-size: 14px;
 }
+
 
 /*Our input box*/
 #input
-{
-    width: 60%;
-    height: 30px;
+{   margin:auto;
+    width: 40%;
+    height: 8%;
 }
 /*flase key used to show that we have to start the button after clicking start button*/
 kbd 
@@ -64,7 +77,6 @@ kbd
     color: #fff;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    
     font-size: 14px;
 }
 /* This is used to refreshes the brower*/
@@ -72,7 +84,7 @@ kbd
 { 
     margin:7px;
     padding:6px;
-    font-size: 18px;
+    font-size: 12px;
     background-color: rgb(255, 16, 16);
     border-radius: 1rem;
 }
@@ -81,7 +93,7 @@ kbd
 {
     margin:7px;
     padding:6px;
-    font-size: 18px;
+    font-size: 12px;
     background-color: rgb(10, 236, 10);
     border-radius: 1rem;
     color:#fff;
@@ -121,7 +133,6 @@ h2
     font-size: 16px;
     color: #fff;
 }
-
 
 
 
