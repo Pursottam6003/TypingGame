@@ -20,7 +20,7 @@ btn.addEventListener('click',function(){
     div =document.getElementById('block');
     div.style.display='block';
    
-    $.get('https://api.quotable.io/random?tags=technology,famous-quotes', function(response){
+    $.get('https://api.quotable.io/random?tags=technology|health|civil-rights,famous-quotes', function(response){
 
         quote=response['content'];
         words=quote.split(' ');
