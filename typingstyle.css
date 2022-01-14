@@ -43,8 +43,8 @@
 /*provide the property of typing block and positioning*/
 .typingBlock
 {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color:#fff;
     font-size: 18px;
