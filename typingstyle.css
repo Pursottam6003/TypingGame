@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(27, 27, 27);
+     
 }
 
 /*Upper box of our web page*/
@@ -30,13 +31,13 @@
 {   
     margin:auto;
     margin-top:10px;
-    max-width: 450px;
     height: auto;
     padding:15px;
     width:60vw;
     border-radius: 1rem;
     border:2px solid pink;
     background-color: rgb(143, 235, 90);
+    min-width: 400px;
     display:none;
    
 }
