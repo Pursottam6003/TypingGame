@@ -11,7 +11,7 @@
     --solidBlack:#000000;
     --white:#FCF6F5FF;
     --blue:rgb(97, 110, 226);
-    --pink:#D83F87;
+    --pink:rgb(248, 157, 172);
     --purple:#8860d0;
     --yellow: #D79922;
     --green: #2BAE66FF;  
@@ -233,6 +233,7 @@ label
     background-color:var(--btnBg);
     border-radius: 1.5rem;
     color:var(--btnFontColor);
+    text-align: center;
 }
 
 .btn:focus{outline-style: none;}

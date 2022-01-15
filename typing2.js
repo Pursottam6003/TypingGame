@@ -34,8 +34,9 @@ switcher.addEventListener('click',function(){
     }
     else 
     {
-        this.innerHTML=`<img src="sun2.png">`;
+        this.innerHTML=`<img src="sun3.png">`;
     }
+    
 });
 //creating a function that waits for start click 
 // in this function we will try to append into a string from array of string and printing into the console
@@ -67,6 +68,8 @@ btn.addEventListener('click',function(){
         }
         console.log(html);  //checking purpose
         article.innerHTML =html;// assigning into the article tag and with the help of this will execute
+
+        document.getElementById('w'+0).style.backgroundColor='yellow';
     });
    
 }) 
