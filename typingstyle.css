@@ -1,28 +1,103 @@
-    /* comments for CSS*/
+/* comments for CSS*/
 
 /* Background image is positioned and baground colour is change*/
 
-#body 
-{
-    background-image: url(./image3.jpg);
-    background-position: center,center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(27, 27, 27);
-     
-}
 
 /*Upper box of our web page*/
 /* Some styles are diven in positon and background property are modified*/
+:root 
+{
+    --black:#101820FF;
+    --solidBlack:#000000;
+    --white:#FCF6F5FF;
+    --blue:rgb(97, 110, 226);
+    --pink:#D83F87;
+    --purple:#8860d0;
+    --yellow: #D79922;
+    --green: #2BAE66FF;  
+    /* #2BAE66FF */
+    --vermillon:#E85A4F;
+    --red:rgb(204, 42, 42);
+    --btnStartColour:rgb(10, 236, 10);
+    --btnResetColour:rgb(255, 16, 16);
+    --articlebg:rgb(143, 235, 90);
+    --typingblock:rgb(204, 42, 42);
+    --gray:rgb(138, 138, 138);
+}
+*{
+    box-sizing: border-box;
+}
+
+body 
+{
+    background: var(--bg);
+}
+
+.light-theme 
+{
+    --bg:var(--white);
+    --fontColor:var(--black);
+    --btnBg:var(--black);
+    --btnFontColor:var(--white);
+
+    /* vairables for styling */
+
+    --UpperTitle:var(--blue);
+    --typingBlock:var(--black);
+    --kbdfont:var(--white);
+    --kbdBg:var(--gray);
+
+    --kbdBdr:var(--solidBlack);
+
+    --btnborder:var(--solidBlack);
+    --articleBox:var(--articlebg);
+
+    --resultBox:var(--purple);
+    --articleBdr:var(--black);
+    --articleCol:var(--black);
+
+    --resultBoxCol:var(--white);
+}
+
+.dark-theme 
+{
+    --bg:var(--black);
+    --fontColor:var(--white);
+    --btnBg:var(--white);
+    --btnFontColor:var(--black);
+
+
+ 
+    /* vairables for styling */
+
+    --UpperTitle:var(--vermillon);
+    --typingBlock:var(--white);
+    --kbdfont:var(--white);
+    --kbdBg:var(--gray);
+
+    --kbdBdr:var(--white);
+
+    --btnborder:var(--white);
+    --articleBox:var(--pink);
+
+    --resultBox:var(--yellow);
+    --articleBdr:var(--white);
+    --articleCol:var(--black);
+    --resultBoxCol:var(--black);
+}
+
+
 .upper
 {
-    background-color: rgb(243, 71, 71);
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    max-height: 100px;
-    border:3px solid rgb(8, 248, 68);
+    background-color: var(--UpperTitle);
+    min-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    padding: 0.1rem;
+    border:2px var(--white);
     border-radius: 1rem;
+    text-align: center;
 }
 
 /*The typing block that will be visible only after clicking on the button and reflect the property*/
@@ -30,53 +105,50 @@
 /*provide the property of typing block and positioning*/
 .typingBlock
 {
-    margin-left: 20%;
-    margin-right: 20%;
-    width:auto;
+    margin: auto;
+    width:80%;
     text-align: center;
-    color:#fff;
-    font-size: 16px;
+    color:var(--typingBlock);
 }
 .block 
 {   
-    margin-left: 20%;
-    margin-right: 20%;
-    padding:15px;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    margin-left:auto;
+    margin-right: auto;
+    padding:1rem;
+    box-sizing: border-box;
+    width: 70%;
+    min-width: 350px;
+    text-align: center;
     border-radius: 1rem;
-    border:2px solid pink;
+    border:2px solid  var(--articleBdr);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    background-color: rgb(143, 235, 90);
+    font-size: 1rem;
+    background-color:var(--articleBox);
+    color: var(--articleCol);
     display:none;
-   
 }
-
-
 /*provide the property of typing block and positioning*/
 .typingBlock
-{
+{    
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color:#fff;
-    font-size: 14px;
+    color:var(--fontColor);
+    font-size: 18px;
 }
-
 
 /*Our input box*/
-#input
-{   margin:auto;
-    width: 40%;
-    height: 8%;
-}
+
 /*flase key used to show that we have to start the button after clicking start button*/
 kbd 
 {
-    background-color: darkgray;
+    background-color: var(--kbdBg);
     border-radius: 0.3rem;
-    color: #fff;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    color:var(--white);
+    border-right: 2px solid var(--kbdBdr);
+    border-bottom: 2px solid var(--kbdBdr);
     font-size: 14px;
 }
 /* This is used to refreshes the brower*/
@@ -84,40 +156,42 @@ kbd
 { 
     margin:7px;
     padding:6px;
-    font-size: 12px;
-    background-color: rgb(255, 16, 16);
-    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: var(--btnResetColour);
+    border-radius: 0.5rem;
+    font-weight: bold;
 }
 /*On clicking start button it will load its properties and call the java script function */
 #start 
 {
     margin:7px;
     padding:6px;
-    font-size: 12px;
-    background-color: rgb(10, 236, 10);
-    border-radius: 1rem;
-    color:#fff;
+    font-size: 1rem;
+    background-color: var(--btnStartColour);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color:var(--white);
     
 }
 /*The wriiten paragraph text color change to black*/
-article
-{
-    color:black;
-}
+ 
 /*Tag for the buttons color */
 a{
-    color:#fff;
+    color:var(--white);
     text-decoration: none;
 }
 
 /*This will after the user finished the typing it will call this function in java script and this properties are passed*/
 .card
 {   
-    background-color: rgb(82, 82, 219);
+    background-color: var(--resultBox);
     border-radius: 1rem;
-    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     padding:10px;
-    color:#fff;
+    color:var(--resultBoxCol);
     display:none;
 }
 
@@ -127,15 +201,48 @@ a{
 
 }
 /*message for the user block after finishing the typing*/
-h2  
+h1  
 {   text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #fff;
+    color: var(--white);
 }
 
+label 
+{   margin: auto;
+    font-size: 1rem;
+    text-align: center;
+}
 
+.input 
+{   margin-top:1rem;
+    margin:auto;
+    text-align: center;
+}
 
+#input 
+{
+    margin-top:1rem;
+}
 
+.btn
+{
+    /* position:absolute; */
+    width:2.2rem;
+    margin-left: 80%;
+    border:none;
+    background-color:var(--btnBg);
+    border-radius: 1.5rem;
+    color:var(--btnFontColor);
+}
+
+.btn:focus{outline-style: none;}
+
+img 
+{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius:50%;
+    border: none;
+}
 
 

@@ -13,38 +13,43 @@
         <title>Typing Game</title>
     </head>
 
-    <body id="body">
+    <body class="light-theme">
         <!--Heading of our web page-->
         <div class="upper">
-            <h2>Welcome to  online typing game</h2>
+            <h1>Welcome to  online typing game</h1>
+            <div>
+                <button class="btn"><img src="moon2.png"></button>
+            </div>
         </div>
         <!--This block is the main block our page this will do everything-->
         <div class="typingBlock">
             <br> <!--Providing the details to the viewer-->
             <label> <em>Start Typing Below...</em></label>
             <br>
-            <label style=" font-size:13px;font-family: Georgia, 'Times New Roman', Times, serif;"><strong>Practice your typing skills with a quote from Quotable API click <kbd>start</kbd></strong></label>
+            <label style=" font: size 1rem;;font-family: Georgia, 'Times New Roman', Times, serif;"><strong>Practice your typing skills with a quote from Quotable API click <kbd>start</kbd> button below.</strong></label>
             <!--This will be filled by java script each of the word will be under span tag and returned to under the article side-->
-            <div class="block" id="block">
-                <article></article>
-            </div>
-            <br>
-            <input type="text" id="input" focus="on" autocapitalize ="none" autocorrect="off">
-            <!--Our buttons one for start and other for reset the game -->
+        </div>
+
+        <div class="block" id="block">
+            <article></article>
+        </div>
+        <div class="input">
+            <input type="text" id="input" focus="on" placeholder="Start typing here">
             <br>
             <button id="start">Start</button>
             <button id=reset><a href="./index.html">Reset</a></button>  
             <p id="result"></p>
-            
-            <!--This card or we can say a div block this will be visible after the user finished the game and it will display the block with results as Time taken and Accuracy repectively-->
-            <div class="card" id="message">
-                <div class="final">
-                    <h2 id="final_message"></h2>
-                    <p id="Accuracy"></p>
-                    <p id="duration"></p>
-                </div>
+        </div>
+        <!--Our buttons one for start and other for reset the game -->
+        <br>
+        
+        <!--This card or we can say a div block this will be visible after the user finished the game and it will display the block with results as Time taken and Accuracy repectively-->
+        <div class="card" id="message">
+            <div class="final">
+                <h3 id="final_message"></h3>
+                <p id="Accuracy"></p>
+                <p id="duration"></p>
             </div>
         </div>
-       
     </body>
 </html>

@@ -11,13 +11,32 @@ greet=document.getElementById('final_message');
 message=document.getElementById('message');
 // Time taken by the user in writing so this need to displayed here by selecting 
 time_taken = document.getElementById('duration');
+
+const switcher =document.querySelector('.btn');
+
 // variables
 let firstInput=false; //for first input
 let words,quote;
 let first=0,last=0;
 let word_index = 0,correct_word=0,incorrect_word=0;
 
- 
+
+
+// function for changing dark and light theme 
+switcher.addEventListener('click',function(){
+    
+    document.body.classList.toggle('dark-theme');
+   
+    var className =document.body.className;
+    if(className=="light-theme")
+    {
+        this.innerHTML=`<img src="moon2.png">`;
+    }
+    else 
+    {
+        this.innerHTML=`<img src="sun2.png">`;
+    }
+});
 //creating a function that waits for start click 
 // in this function we will try to append into a string from array of string and printing into the console
 // creating a function on clicking input the function will execute
@@ -115,8 +134,4 @@ input.addEventListener('input',function(e){
 
 
 // The end  if you want any changes please contribute
-
-
-
-
 
